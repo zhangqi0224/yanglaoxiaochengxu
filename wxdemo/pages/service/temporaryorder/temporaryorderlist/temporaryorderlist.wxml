@@ -1,0 +1,65 @@
+<!--pages/service/temporaryorder/temporaryorderlist/temporaryorderlist.wxml-->
+<!-- 头像，姓名 --> 
+<view class="page_box" wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}">
+<view class="page_header">
+  <view class="header_img" wx:if="{{item.sex==1}}"><image src="../../../../images/man.png"></image></view>
+  <view class="header_img" wx:if="{{item.sex==2}}"><image src="../../../../images/woman.png"></image></view>
+<view class="header_name_box">
+  <view class="name_box">{{item.oldName}}</view>
+</view>
+</view>
+</view>
+
+
+<!-- 老人编号，护理等级 -->
+<view class="common"  wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}">
+    <view class="file_list ">
+        <view class="text_left">老人编号</view>
+        <view class="text_right">{{item.oldCode}}</view>
+    </view>
+
+    <view class="file_list">
+        <view class="text_left">性别</view>
+        <view class="text_right" wx:if="{{item.sex==1}}">男</view>
+         <view class="text_right" wx:if="{{item.sex==2}}">女</view> 
+    </view>
+
+    <view class="file_list">
+        <view class="text_left">护理等级</view>
+        <view class="text_right" wx:if="{{item.nursingLevel}}">{{item.nursingLevel}}</view>
+        <view class="text_right" wx:if="{{!item.nursingLevel}}">-</view>
+    </view> 
+</view>
+
+
+
+<!-- 每次记录 -->
+<view class="people_file_box"  wx:for="{{array}}" wx:key="{{item.id}}">  
+<view class="file_list"> 
+<view class="text_left">日期时间</view><view class="text_right">{{item.adviceDate}}</view>
+</view>
+
+<view class="file_list">
+<view class="text_left">医嘱内容</view><view class="text_right">{{item.adviceContent}}</view>
+</view> 
+ 
+<view class="file_list">
+<view class="text_left">医师</view><view class="text_right">{{item.doctor}}</view>
+</view>
+
+<view class="file_list">
+<view class="text_left">执行时间</view><view class="text_right">{{item.executeTime}}</view>
+</view> 
+ 
+<view class="file_list">
+<view class="text_left">执行人</view><view class="text_right">{{item.executor}}</view>
+</view>
+ 
+ 
+</view>
+     <block wx:if="{{notHave}}">
+      <view class="nothave">
+      暂无数据
+      </view>
+      
+    </block> 

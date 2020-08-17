@@ -1,0 +1,19 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+	<textarea name="content" placeholder='健康记录' class='textdiv' maxlength='-1'></textarea>
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+	<view>
+
+
+	</view>
+</view>

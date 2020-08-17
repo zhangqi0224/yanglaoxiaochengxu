@@ -1,0 +1,156 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{valuearray}}" class='i4'>
+
+      <input value='{{valuearray[index]}}' placeholder="请选择预约类型"  name='style' disabled="true"></input>
+
+    </picker>
+
+
+<block wx:if="{{valuearrayone}}">
+
+	<view class='i2'>
+
+      <input  placeholder="长者姓名"  name='oldName' type="text"></input>
+
+  </view>
+
+  <view class='i2'>
+
+      <input  placeholder="长者电话"  name='oldPhone' type="text"></input>
+
+  </view>
+
+  <view class='i2'>
+
+      <input  placeholder="长者年龄"  name='oldAge' type="number"></input>
+
+  </view>
+
+    <picker bindchange="bindPickernativePlaceChange" value="{{nativePlaceindex}}" range="{{nativePlace}}" class='i4'>
+
+      <input value='{{nativePlace[nativePlaceindex]}}' placeholder="自理能力"  name='selfCareAbility' disabled="true"></input>
+
+    </picker>
+
+  <view class='i2'>
+
+      <input  placeholder="籍贯"  name='nativePlace' type="text"></input>
+
+  </view>
+
+  <view class='i2'>
+
+      <input  placeholder="现居住地"  name='addr' type="text"></input>
+
+  </view>
+
+      <picker bindchange="bindPickerincomeChange" value="{{incomeindex}}" range="{{income}}" class='i4'>
+
+      <input value='{{income[incomeindex]}}' placeholder="收入"  name='income' disabled="true"></input>
+
+    </picker>
+  <view class='i2'>
+
+      <input  placeholder="子女姓名"  name='childrenName' type="text"></input>
+
+  </view>
+
+    <view class='i2'>
+
+      <input  placeholder="子女电话"  name='childrenPhone' type="text"></input>
+
+  </view>
+
+		<view class='i2'>
+      <picker  mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      
+       <input value='{{startDate}}' placeholder="预约时间"  name='visitTime'></input>
+      
+      </picker>
+		</view>
+
+    <view class='i2'>
+
+      <input  placeholder="来访人数"  name='visitNumber' type="text"></input>
+
+  </view>
+
+      <view class='i2'>
+
+      <input  placeholder="备注"  name='remark' type="text"></input>
+
+  </view>
+
+</block>
+<block wx:if="{{valuearraytwo}}">
+	<view class='i2'>
+
+      <input  placeholder="长者姓名"  name='oldName' type="text"></input>
+
+  </view>
+
+  <view class='i2'>
+
+      <input  placeholder="长者电话"  name='oldPhone' type="text"></input>
+
+  </view>
+
+  <view class='i2'>
+
+      <input  placeholder="长者年龄"  name='oldAge' type="number"></input>
+
+  </view>
+
+    <picker bindchange="bindPickernativePlaceChange" value="{{nativePlaceindex}}" range="{{nativePlace}}" class='i4'>
+
+      <input value='{{nativePlace[nativePlaceindex]}}' placeholder="自理能力"  name='selfCareAbility' disabled="true"></input>
+
+    </picker>
+
+  <view class='i2'>
+
+      <input  placeholder="陪同人姓名"  name='childrenName' type="text"></input>
+
+  </view>
+
+    <view class='i2'>
+
+      <input  placeholder="陪同人电话"  name='childrenPhone' type="text"></input>
+
+  </view>
+
+		<view class='i2'>
+      <picker  mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      
+       <input value='{{startDate}}' placeholder="预约评估时间"  name='assessmentTime'></input>
+      
+      </picker>
+		</view>
+
+      <view class='i2'>
+
+      <input  placeholder="备注"  name='remark' type="text"></input>
+
+  </view>
+
+
+
+</block>
+
+  
+		<view>
+			<button type="primary" form-type="submit" class='button'>确认预约</button>
+		</view>
+
+
+	</form>
+	<view>
+
+
+	</view>
+</view>

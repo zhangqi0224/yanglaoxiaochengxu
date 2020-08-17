@@ -1,0 +1,38 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+  <form bindsubmit="bind">
+    <picker bindchange="bindPickerChange" value="{{index}}" range-key="title" range="{{obj}}">
+      <view class="picker" class='xz'>
+        <text class='xz'>身份选择：</text>
+        <text class='sf'>{{obj[index].title}} </text>
+        <text class='kh'>请选择您的身份>></text>
+      </view>
+    </picker>
+    <block wx:if="{{emp}}">
+    <view class='i1'>
+      <input type="text" name="username" placeholder='管理账号' />
+    </view>
+    <view class='i2'>
+      <input type="password" name="password" placeholder='管理密码' />
+    </view>
+    </block>
+     <block wx:if="{{older}}">
+    <view class='i1'>
+      <input type="text" name="oldName" placeholder='姓       名' />
+    </view>
+    <view class='i2'>
+      <input type="text" name="idCardNo" placeholder='身份证号' />
+    </view>
+    </block>
+    
+    <view>
+      <button type="primary" form-type="submit" class='button'>立即认证</button>
+    </view>
+
+  </form>
+  <view>
+
+
+  </view>
+</view>

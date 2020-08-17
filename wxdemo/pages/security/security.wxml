@@ -1,0 +1,233 @@
+<view class="people_file_box" wx:for="{{array}}" wx:key="{{item.id}}">
+	<view class="file_list">
+		<view class="text_left">老人姓名</view>
+		<view class="text_right">{{item.oldName}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">性别</view>
+		<view class="text_right" wx:if="{{item.sex==1}}">男</view>
+		<view class="text_right" wx:if="{{item.sex==2}}">女</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">年龄</view>
+		<view class="text_right">{{item.oldAge}}</view>
+	</view>
+
+	<view class="file_list" style="border-bottom:0;">
+		<view class="text_left">园区</view>
+		<view class="text_right">{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+	</view>
+
+	<!-- 中间部分 -->
+
+	<view>
+		<view class="weui-grids">
+
+			<block wx:if="{{group == 4}}">
+
+				<navigator url="basicfile/basicfile?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="/images/fw.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常照料</text>
+
+					</view>
+				</navigator>
+
+
+			</block>
+
+			<block wx:if="{{group == 5}}">
+
+				<navigator url="monitor/monitor?id={{item.id}}&OLD_STATUS={{item.OLD_STATUS}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jc.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常监测</text>
+
+					</view>
+				</navigator>
+
+
+				<navigator url="healthfile/healthfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jilu.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">健康记录</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="dayfile/dayfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/day.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">生活记录</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="basicfile/basicfile?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="/images/fw.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常照料</text>
+
+					</view>
+				</navigator>
+			</block>
+			<block wx:if="{{group == 6}}">
+				<navigator url="monitor/monitor?id={{item.id}}&OLD_STATUS={{item.OLD_STATUS}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jc.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常监测</text>
+
+					</view>
+				</navigator>
+				<navigator url="healthfile/healthfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jilu.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">健康记录</text>
+
+					</view>
+				</navigator>
+				<navigator url="dayfile/dayfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/day.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">生活记录</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="basicfile/basicfile?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="/images/fw.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常照料</text>
+
+					</view>
+				</navigator>
+
+			</block>
+			<block wx:if="{{group == 7}}">
+      
+				<navigator url="diagnosis/diagnosis?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="../../images/xs.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">巡诊记录</text>
+					</view>
+				</navigator>
+
+				<navigator url="enjoin/enjoin?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/enjoin.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">医嘱记录</text>
+
+					</view>
+				</navigator>			
+
+			</block>
+
+			<block wx:if="{{group == 9}}">
+				<navigator url="monitor/monitor?id={{item.id}}&OLD_STATUS={{item.OLD_STATUS}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jc.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常监测</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="basicfile/basicfile?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="/images/fw.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">日常照料</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="healthfile/healthfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/jilu.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">健康记录</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="dayfile/dayfile?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/day.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">生活记录</text>
+
+					</view>
+				</navigator>
+
+				<navigator url="diagnosis/diagnosis?id={{item.id}}">
+					<view class="weui-grid">
+						<view class="weui-grid__icon">
+							<image src="../../images/xs.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">巡诊记录</text>
+					</view>
+				</navigator>
+
+				<navigator url="enjoin/enjoin?id={{item.id}}">
+					<view class="weui-grid">
+
+						<view class="weui-grid__icon">
+							<image src="/images/enjoin.png" mode="scaleToFill" />
+						</view>
+						<text class="weui-grid__label">医嘱记录</text>
+
+					</view>
+				</navigator>
+
+			</block>
+
+
+
+		</view>
+
+
+	</view>
+
+
+
+
+
+</view>

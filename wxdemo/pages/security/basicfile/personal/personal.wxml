@@ -1,0 +1,64 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+		<picker bindchange="bindPickerDressing" value="{{dressingindex}}" range="{{dressing}}" class='i4'>
+
+			<input value='{{dressing[dressingindex]}}' placeholder="穿衣" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerWashing1" value="{{washing1index}}" range="{{washing1}}" class='i4'>
+
+			<input value='{{washing1[washing1index]}}' placeholder="口腔护理" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerWashing2" value="{{washing2index}}" range="{{washing2}}" class='i4'>
+
+			<input value='{{washing2[washing2index]}}' placeholder="中餐洗手漱口" disabled="true"></input>
+
+		</picker>
+
+    <picker bindchange="bindPickerWashing3" value="{{washing3index}}" range="{{washing3}}" class='i4'>
+
+			<input value='{{washing3[washing3index]}}' placeholder="晚餐洗手漱口" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerWashing4" value="{{washing4index}}" range="{{washing4}}" class='i4'>
+
+			<input value='{{washing4[washing4index]}}' placeholder="洗/泡脚" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerWashing5" value="{{washing5index}}" range="{{washing5}}" class='i4'>
+
+			<input value='{{washing5[washing5index]}}' placeholder="洗漱" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerWashing6" value="{{washing6index}}" range="{{washing6}}" class='i4'>
+
+			<input value='{{washing6[washing6index]}}' placeholder="清洗" disabled="true"></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerUndress" value="{{undressindex}}" range="{{undress}}" class='i4'>
+
+			<input value='{{undress[undressindex]}}' placeholder="脱衣" disabled="true"></input>
+
+		</picker>
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+    
+	</form>
+	<view>
+
+
+	</view>
+</view>

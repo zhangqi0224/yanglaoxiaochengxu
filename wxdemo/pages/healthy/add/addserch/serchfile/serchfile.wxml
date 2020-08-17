@@ -1,0 +1,59 @@
+<view class="page_box" wx:for="{{array}}" wx:key="{{item.id}}">
+	<view class="page_header">
+		<!-- 头像 -->
+		<view class="header_img" wx:if="{{item.sex==1}}">
+			<image src="../../../../../images/man.png"></image>
+		</view>
+		<view class="header_img" wx:if="{{item.sex==2}}">
+			<image src="../../../../../images/woman.png"></image>
+		</view>
+		<!-- 姓名 -->
+		<view class="header_name_box">
+			<view class="name_box">{{item.oldName}}</view>
+		</view>
+	</view>
+</view>
+
+
+<view class="people_file_box" wx:for="{{array}}" wx:key="{{item.id}}">
+
+	<view class="file_list">
+		<view class="text_left">性别</view>
+		<view class="text_right" wx:if="{{item.sex==1}}">男</view>
+		<view class="text_right" wx:if="{{item.sex==2}}">女</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">年龄</view>
+		<view class="text_right">{{item.oldAge}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">园区</view>
+		<view class="text_right">{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">床位信息</view>
+		<view class="text_right">{{item.bedNo}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">联系人</view>
+		<view class="text_right">{{item.contactsName}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">入住时间</view>
+		<view class="text_right">{{item.createDate}}</view>
+	</view>
+
+
+	<view class="section">
+
+		<button type="button" bindtap="isadd">关注</button>
+    
+	</view>
+
+
+</view>

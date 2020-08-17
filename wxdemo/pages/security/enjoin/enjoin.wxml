@@ -1,0 +1,49 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{valuearray}}" class='i4'>
+
+      <input value='{{valuearray[index]}}' placeholder="医嘱类型" disabled="true" name='style'></input>
+
+    </picker>
+
+
+		<view class='i2'>
+      <picker  mode="multiSelector" bindchange="bindStartMultiPickerChange" bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      
+       <input value='{{startDate}}' placeholder="执行时间" disabled="true" name='startDate'></input>
+      
+      </picker>
+		</view>
+
+    <block wx:if="{{end}}">
+   		<view class='i2'>
+      <picker  mode="multiSelector" bindchange="bindStartMultiPickerChanges" bindtap='pickerTaps' bindcolumnchange="bindMultiPickerColumnChanges" value="{{multiIndex}}" range="{{multiArray}}">
+      
+       <input value='{{endDate}}' placeholder="结束时间" disabled="true" name='endDate'></input>
+      
+      </picker>
+		</view> 
+    
+    
+    </block>
+    
+    
+    <view class='i2'>
+    <input type="text" name="people" placeholder='执行人' />
+    </view>
+		<textarea name="content" placeholder='医嘱记录' class='textdiv' maxlength='-1'></textarea>
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+	<view>
+
+
+	</view>
+</view>

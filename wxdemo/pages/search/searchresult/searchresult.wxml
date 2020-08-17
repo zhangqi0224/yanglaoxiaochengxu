@@ -1,0 +1,19 @@
+<!--pages/search/searchresult/searchresult.wxml-->
+ <view class="content"> 
+        <view class="home_box" wx:for="{{array}}">
+          <view class='home_place_a'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+          <view class='home_bed_a'>{{item.bedNo}}</view>
+          <view class='home_file'>
+            <view class="file_text">
+              <text class="text_style text_a">姓名：{{item.oldName}}</text>
+              <text class="text_style text_a">入住时间：{{item.checkInDate}}</text>
+            </view>
+            <view class="file_text">
+              <text class="text_style text_a">年龄：{{item.oldAge}}</text>
+              <text class="text_style text_a">所属区域:{{item.roomRegion}}</text>
+            </view>
+          </view>
+        </view> 
+
+      </view>
+   

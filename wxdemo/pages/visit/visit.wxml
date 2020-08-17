@@ -1,0 +1,62 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+	<form bindsubmit="tj">
+
+		<view class='i2'>
+
+			<input type="text" name="visitName" placeholder='来访人姓名' />
+
+		</view>
+
+		<view class='i2'>
+
+			<input type="text" name="phone" placeholder='来访人联系方式' />
+
+		</view>
+
+
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{relationship}}" class='i4'>
+
+			<input value='{{relationship[index]}}' placeholder="与老人关系" disabled="true" name='relation'></input>
+
+		</picker>
+
+		<picker bindchange="bindPickerChangeold" value="{{oldIndex}}" range="{{oldArray}}" class='i4'>
+
+			<input value='{{oldArray[oldIndex]}}' placeholder="老人姓名" disabled="true" name='relation'></input>
+
+		</picker>
+
+
+		<view class='i2'>
+
+			<input type="txet" name="visitReason" placeholder='来访缘由' />
+
+		</view>
+
+				<view class='i2'>
+
+			<input type="txet" name="remarks" placeholder='备注' />
+
+		</view>
+
+
+				<view class='i2'>
+
+			<input type="txet" name="carryGoods" placeholder='携带物品' />
+
+		</view>
+
+
+
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+
+
+</view>

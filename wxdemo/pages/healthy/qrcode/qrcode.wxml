@@ -1,0 +1,5 @@
+<view class="qrcode">
+
+<image src="https://www.jinlingjiankang.com/nursingms/{{qrcode}}" class="qrcodeimg"></image>
+
+</view>

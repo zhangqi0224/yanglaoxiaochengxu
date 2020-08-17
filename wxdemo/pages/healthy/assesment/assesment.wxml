@@ -1,0 +1,53 @@
+<!--pages/healthy/assesment/assesment.wxml-->
+<view class="people_file_box" wx:for="{{array}}">
+	<view class="file_list">
+		<view class="text_left">老人姓名</view>
+		<view class="text_right">{{item.OLD_NAME}}</view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">评估编号</view>
+		<view class="text_right">{{item.evalue_number}}</view>
+	</view>
+	<view class="file_list">
+		<view class="text_left">评估次数</view>
+		<view class="text_right">{{item.evalue_count}} </view>
+	</view>
+
+	<view class="file_list">
+		<view class="text_left">评估日期</view>
+		<view class="text_right">{{item.evalue_date==null?"-":item.evalue_date}}</view>
+
+	</view>
+	<view class="file_list">
+		<view class="text_left">日常生活活动</view>
+		<view class="text_right">{{item.DAILY_LIFE}}</view>
+
+	</view>
+	<view class="file_list">
+		<view class="text_left">精神状态</view>
+		<view class="text_right">{{item.MENTAL_STATE}}</view>
+
+	</view>
+    <view class="file_list">
+		<view class="text_left">睡眠情况</view>
+		<view class="text_right">{{item.SLEEP_STATUS}}</view>
+
+	</view>
+	<view class="file_list">
+		<view class="text_left">感知觉与沟通</view>
+		<view class="text_right">{{item.SOCIAL}}</view>
+
+	</view>
+ 
+<view class="file_list">
+	<view class="text_left">过敏药物</view>
+	<view class="text_right">{{item.ALLERGY_MED}}</view>
+
+</view>
+<view class="file_list">
+	<view class="text_left">过敏食物</view>
+	<view class="text_right">{{item.ALLERGY_FOOD}}</view>
+
+</view>
+</view>

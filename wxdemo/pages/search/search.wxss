@@ -1,0 +1,111 @@
+/* pages/department/department.wxss */
+page{
+  background: white;
+  overflow-x: hidden;
+}
+.container {
+  padding: 0;
+}
+
+.card-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.card-container .section {
+  padding: 20rpx 28rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.card-container .section input {
+  padding: 0 28rpx;
+  margin-right: 160rpx;
+  width: 100%;
+  height: 72rpx;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  background: #f4f4f8;
+  border: 2rpx solid #f4f4f8;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+}
+/*tab切换*/
+.tab{
+  width: 100%;
+  margin-top: 2%;
+}
+.tab-title{
+  width:100%;
+  height:70rpx;
+  padding-bottom: 10rpx;
+  padding-top: 5rpx;
+  border-bottom: 1px solid #CCCC;
+  line-height:70rpx;
+  display:flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: rgb(64, 211,164);
+  font-family: "微软雅黑";
+}
+.CCCC{
+  color: #CCCC;
+}
+.tab_b{
+  color: black;
+   border-bottom: 0;
+   margin-top: 2%;
+  
+}
+.tab_d{
+  color: black;
+  
+   margin-top: 2%;
+
+  
+}
+.tab_c{
+  color: black;
+
+}
+.tab-title view{
+  width: 150rpx;
+  margin: 0 auto;
+  text-align:center;
+}
+.border-tottom{
+  background:  rgb(64, 211,164);
+  color:white;
+  border-radius: 15px;
+}
+.show{display:block;}
+.hidden{display:none;}
+.button_box{
+  width: 100%;
+  text-align: center;
+}
+.button_box>button{
+  width: 250rpx;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20%;
+
+  font-size: 14px;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.serch_button{
+  background:  rgb(64, 211,164);
+  color: white;
+   margin-left: 10%;
+}
+.rest{
+  background: #CCCC;
+  color: white;
+   
+}
+.i4{
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 6%;
+}

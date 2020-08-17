@@ -1,0 +1,14 @@
+<!-- background -->
+<view class='bg-cover'></view>
+<!-- Login Form -->
+<view class='login-container'>
+<text class="login_text">欢迎登录智慧养老服务平台</text>
+  <image src="/images/loginimg.jpg"></image>
+  
+    <!--  -->
+    <button  class="login-btn"  open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      授 权 登 录
+    </button>
+
+</view>
+<!-- Prompt Message -->

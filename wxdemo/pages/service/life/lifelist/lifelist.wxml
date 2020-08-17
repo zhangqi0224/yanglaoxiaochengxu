@@ -1,0 +1,89 @@
+<!--pages/service/dailymonitoring/dailymonitoringlist/dailymonitoringlist.wxml-->
+  
+  <!-- 头像 名字 -->
+<block  wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}">
+<view class="page_header"> 
+<view class="header_name_box">
+  <view class="name_box">{{item.oldName}}</view>
+</view> 
+</view>
+
+<!-- 老人公共部分 -->
+
+<view class="file_list">
+ <view class="text_left">年龄</view>
+ <view class="text_right">{{item.oldAge}}</view>
+</view>
+
+ 
+<view class="file_list"> 
+  <view class="text_left">护理等级</view>
+   <view class="text_right" wx:if="{{item.nursingLevel}}">{{item.nursingLevel}}</view>
+  <view class="text_right" wx:if="{{!item.nursingLevel}}">-</view>
+</view>
+</block>
+
+
+<!-- 每次测量结果 -->
+<view class="people_file_box  list_a"  wx:for="{{array}}" wx:key="{{item.id}}">   
+  <view class="file_list">
+      <view class="text_left">记录日期</view>
+      <view class="text_right">{{item.recordDate}}</view>
+  </view> 
+
+<view class="file_list">
+  <view class="text_left">一般情况</view>
+  <view class="text_right">{{item.generalState}}</view>
+</view> 
+ 
+<view class="file_list">
+  <view class="text_left">神志情况</view>
+  <view class="text_right">{{item.mindState}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">皮肤</view>
+  <view class="text_right">{{item.skinState}}</view>
+</view>
+ 
+ 
+<view class="file_list">
+  <view class="text_left">管道</view>
+  <view class="text_right" wx:if="{{item.item.pipeState}}">{{item.BREATHING}}</view>
+  <view class="text_right" wx:if="{{!item.item.pipeState}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">饮食</view>
+  <view class="text_right" wx:if="{{item.dietState}}">{{item.dietState}}</view>
+  <view class="text_right" wx:if="{{!item.dietState}}">-</view>
+</view> 
+
+<view class="file_list">
+    <view class="text_left">睡眠</view>
+    <view class="text_right"  wx:if="{{item.sleepState}}">{{item.sleepState}}</view>
+    <view class="text_right"  wx:if="{{!item.sleepState}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left" >心情</view>
+  <view class="text_right"  wx:if="{{item.moodState}}">{{item.moodState}}</view>
+  <view class="text_right"  wx:if="{{!item.moodState}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">大便情况</view>
+  <view class="text_right">{{item.excreteState}}</view>
+</view>
+
+
+</view>
+
+     <block wx:if="{{notHave}}">
+      <view class="nothave">
+      暂无数据
+      </view>
+      
+    </block> 
+ 
+ 

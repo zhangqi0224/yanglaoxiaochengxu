@@ -1,0 +1,1121 @@
+<!-- 轮播图 -->
+<view>
+	<swiper indicator-dots="true" autoplay="true" interval="5000">
+		<block wx:for="{{banner}}">
+			<swiper-item>
+				<image src="https://www.jinlingjiankang.com/nursingms/{{item.filePath}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+</view>
+
+<!-- 中间部分 -->
+<view>
+
+	<block wx:if="{{group == 9}}">
+
+		<view class="weui-grids">
+
+
+
+			<view class="weui-grid">
+				<navigator url="adminlist/adminlist">
+					<view class="weui-grid__icon">
+						<image src="../../images/zuijin.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">来访管理</text>
+				</navigator>
+			</view>
+
+
+
+			<navigator url="basicfile/basicfile">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/dangan.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者基础档案</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="servicemanagement/servicemanagement">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/fuwu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者服务管理</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="consultation/consultation">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/consultation.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">咨询接待</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+			<navigator url="life/life">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/day.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">生活记录</text>
+
+				</view>
+			</navigator>
+
+
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+
+
+			
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+
+			</navigator>
+			<navigator  url='/pages/healthy/assesment/assesment' > 
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/pinggu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">评估信息</text> 
+				</view> 
+			</navigator>
+		</view>
+
+	</block>
+
+
+
+	<block wx:if="{{group == 1}}">
+
+		<view class="weui-grids">
+
+
+
+			<view class="weui-grid">
+				<navigator url="adminlist/adminlist">
+					<view class="weui-grid__icon">
+						<image src="../../images/zuijin.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">来访管理</text>
+				</navigator>
+			</view>
+
+
+
+			<navigator url="basicfile/basicfile">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/dangan.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者基础档案</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="servicemanagement/servicemanagement">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/fuwu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者服务管理</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+			<navigator url="life/life">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/day.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">生活记录</text>
+
+				</view>
+			</navigator>
+
+
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+
+			</navigator>
+<navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+		</view>
+
+	</block>
+
+	<block wx:if="{{group == 2}}">
+
+		<view class="weui-grids">
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+
+
+		</view>
+
+	</block>
+
+	<block wx:if="{{group == 3}}">
+
+		<view class="weui-grids">
+
+			<view class="weui-grid">
+				<navigator url="adminlist/adminlist">
+					<view class="weui-grid__icon">
+						<image src="../../images/zuijin.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">来访管理</text>
+				</navigator>
+			</view>
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+ 
+		</view>
+
+	</block>
+	<block wx:if="{{group == 4}}">
+		<view class="weui-grids">
+
+			<view class="weui-grid">
+				<navigator url="adminlist/adminlist">
+					<view class="weui-grid__icon">
+						<image src="../../images/zuijin.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">来访管理</text>
+				</navigator>
+			</view>
+
+			<navigator url="basicfile/basicfile">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/dangan.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者基础档案</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="servicemanagement/servicemanagement">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/fuwu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者服务管理</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+			<navigator url="life/life">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/day.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">生活记录</text>
+
+				</view>
+			</navigator>
+
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+
+			</navigator>
+<navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+		</view>
+
+
+
+	</block>
+	<block wx:if="{{group == 5}}">
+		<view class="weui-grids">
+
+
+
+			<navigator url="basicfile/basicfile">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/dangan.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者基础档案</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="servicemanagement/servicemanagement">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/fuwu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者服务管理</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+			<navigator url="life/life">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/day.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">生活记录</text>
+
+				</view>
+			</navigator>
+
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+
+			</navigator>
+<navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+
+		</view>
+
+
+
+	</block>
+	<block wx:if="{{group == 6}}">
+		<view class="weui-grids">
+
+
+
+			<navigator url="basicfile/basicfile">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/dangan.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者基础档案</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="servicemanagement/servicemanagement">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/fuwu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长者服务管理</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+			<navigator url="life/life">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/day.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">生活记录</text>
+
+				</view>
+			</navigator>
+
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+
+			</navigator>
+<navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+		</view>
+
+
+
+	</block>
+	<block wx:if="{{group == 7}}">
+		<view class="weui-grids">
+
+
+			<navigator url="dailymonitoring/dailymonitoring">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jiance.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">日常监测</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="healthrecord/healthrecord">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/jilu.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">健康记录</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="temporaryorder/temporaryorder">
+				<view class="weui-grid">
+
+					<view class="weui-grid__icon">
+						<image src="/images/linshi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">临时医嘱</text>
+
+				</view>
+			</navigator>
+
+			<navigator url="standingorder/standingorder">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/changqi.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">长期医嘱</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="diagnosisfile/diagnosisfile">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="../../images/xs.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">巡诊记录</text>
+				</view>
+			</navigator>
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+<navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+
+		</view>
+
+
+
+	</block>
+	<block wx:if="{{group == 8}}">
+		<view class="weui-grids">
+
+			<view class="weui-grid">
+				<navigator url="adminlist/adminlist">
+					<view class="weui-grid__icon">
+						<image src="../../images/zuijin.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">来访管理</text>
+				</navigator>
+			</view>
+
+			<navigator url="consultation/consultation">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/consultation.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">咨询接待</text>
+
+				</view>
+			</navigator>
+
+
+			<navigator url="activity/activity">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+
+				</view>
+			</navigator>
+			<navigator url="vr/vr">
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/yly.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">VR园区</text>
+
+				</view>
+			</navigator>
+
+			<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+				<view class="weui-grid__icon">
+					<image src="/images/erweima.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">二维码</text>
+
+			</view>
+			<navigator url="booking/booking">
+
+
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/zxyy.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">在线预约</text>
+
+				</view>
+     
+			</navigator>
+     <navigator  url='/pages/healthy/assesment/assesment' > 
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/pinggu.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">评估信息</text>
+
+			</view>
+
+		</navigator>
+
+
+
+		</view>
+
+
+
+	</block>
+	<block wx:if="{{group == 0}}">
+		<view class="weui-grids">
+		<navigator url="activity/activity">
+		
+				<view class="weui-grid">
+					<view class="weui-grid__icon">
+						<image src="/images/hd.png" mode="scaleToFill" />
+					</view>
+					<text class="weui-grid__label">院内活动</text>
+				</view>
+			
+		</navigator>
+
+
+		<navigator url="vr/vr">
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/yly.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">VR园区</text>
+
+			</view>
+		</navigator>
+
+		<view class="weui-grid" bindtap='two_dimensionalcode'>
+
+			<view class="weui-grid__icon">
+				<image src="/images/erweima.png" mode="scaleToFill" />
+			</view>
+			<text class="weui-grid__label">二维码</text>
+
+		</view>
+
+		<navigator url="booking/booking">
+
+
+			<view class="weui-grid">
+				<view class="weui-grid__icon">
+					<image src="/images/zxyy.png" mode="scaleToFill" />
+				</view>
+				<text class="weui-grid__label">在线预约</text>
+
+			</view>
+
+		</navigator>
+ 
+
+
+</view>
+
+	</block> 
+</view>

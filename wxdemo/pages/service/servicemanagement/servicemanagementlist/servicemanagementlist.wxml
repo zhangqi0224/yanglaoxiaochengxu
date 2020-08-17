@@ -1,0 +1,64 @@
+<!--pages/service/servicemanagement/servicemanagementlist/servicemanagementlist.wxml-->
+<view class="page_box" wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}">
+    <view class="page_header">
+    <!-- 头像 -->
+    <view class="header_img" wx:if="{{item.sex==1}}"><image src="../../../../images/man.png"></image></view>
+    <view class="header_img" wx:if="{{item.sex==2}}"><image src="../../../../images/woman.png"></image></view>
+    <!-- 姓名 -->
+    <view class="header_name_box">
+      <view class="name_box">{{item.oldName}}</view>
+    </view>
+    </view>
+</view>
+
+<view class="common"  wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}">
+  <view class="file_list">
+  <view class="text_left">老人编号</view><view class="text_right">{{item.oldCode}}</view>
+  </view>
+
+  <view class="file_list">
+  <view class="text_left">护理级别</view> 
+      <view class="text_right" wx:if="{{item.nursingLvl}}">{{item.nursingLvl}}</view>
+      <view class="text_right" wx:if="{{!item.nursingLvl}}">-</view>
+  </view>
+</view>
+
+
+<view class="people_file_box" wx:for="{{array}}" wx:key="{{item.id}}" >  
+
+<view class="file_list">
+<view class="text_left">服务人员</view><view class="text_right">{{item.registrarName}}</view>
+</view>
+
+
+<view class="file_list">
+<view class="text_left">服务项目</view><view class="text_right">{{item.nursingTempName}}</view>
+</view>
+
+ 
+ 
+<view class="file_list">
+<view class="text_left">开始时间</view><view class="text_right">{{item.startTime}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">结束时间</view>
+  <view class="text_right" wx:if="{{item.endTime != null}}">{{item.endTime}}</view>
+  <view class="text_right" wx:if="{{item.endTime == null}}">/</view>
+</view>
+
+ 
+ 
+<view class="file_list">
+<view class="text_left">创建时间</view><view class="text_right">{{item.createDate}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">备注</view>
+  <view class="text_right" wx:if="{{item.remarks}}">{{item.remarks}}</view>
+  <view class="text_right" wx:if="{{!item.remarks}}">-</view>
+</view>
+ 
+</view> 
+
+ 

@@ -1,0 +1,72 @@
+.page_box{
+  width: 100%;
+}
+.page_header{
+  width: 100%;
+  height: 200rpx;
+  position: relative;
+}
+.header_img{
+position: absolute;
+width: 150rpx;
+height:auto;
+top: 25rpx;
+left:180rpx;
+
+}
+.header_img>image{
+  width: 150rpx;
+  height: 150rpx;
+}
+.name_box{
+  font-family: "微软雅黑";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.header_name_box{
+  position: absolute;
+  top: 65rpx;
+  left: 400rpx;
+  letter-spacing: 2px;
+}
+/*总体*/
+.people_file_box{
+  width: 100%;
+}
+.file_box{
+  border-top: 1px solid #CCCC;
+  border-bottom:1px solid #CCCC;
+}
+.file_list{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.text_left{
+  float: left;
+  margin-left: 35rpx;
+  font-size: 14px;
+}
+.text_right{
+ float: right;
+ margin-right: 35rpx;
+ font-size: 14px;
+}
+.list_a{
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.box_b{
+  border-top: 0;
+}
+button{
+  width:150rpx;
+  height:70rpx;
+  font-size: 14px;
+  margin-top: 5rpx;
+  background: #40D4A4;
+  color: white;
+}
+.ec{
+  width: 100%;
+  height: 500rpx;
+}

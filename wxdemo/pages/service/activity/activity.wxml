@@ -1,0 +1,30 @@
+<view class='index_title'>
+最新活动
+</view>
+<view wx:for="{{array}}" wx:key="">
+  <navigator url="index-detail/index-detail?id={{item.id}}">
+
+    <view class="post-container">
+
+      <view class="post-author-date">
+        <image class="post-author" src="/images/auser.png"></image>
+        <text class="post-date">活动发布人员</text>
+        <text class="post-date">{{item.createtime}}</text>
+      </view>
+      <text class="post-title">{{item.title}}</text>
+      <!-- <image class="post-image" src="http://gsl.zhanlutong.com/static{{item.logo}}"></image> -->
+      <!-- <text class="post-content">{{item.content}}
+            </text> -->
+      <!-- <rich-text nodes="{{html.content}}"></rich-text> -->
+      <view class="post-like">
+        <image class="post-like-image" src="/images/bq.png"></image>
+        <text class="post-like-font a">院内活动</text>
+
+
+        <image class="post-like-image" src="/images/view.png"></image>
+        <text class="post-like-font">{{item.click}}</text>
+      </view>
+    </view>
+  </navigator>
+
+</view>

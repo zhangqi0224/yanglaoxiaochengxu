@@ -1,0 +1,31 @@
+
+<view class="cu-bar search">
+    <view class="search-form">
+        <text class="cuIcon-search"></text>
+        <input type="text" placeholder="老人姓名/身份证号" confirm-type="search" focus="true" bindinput="wxSearchInput"/>
+        <text class="cuIcon-close"></text>
+    </view>
+</view>
+ <view class="clear"></view>
+  <view class="people_null" wx:if="{{box_null}}"> 
+    <text>暂无数据</text>
+ </view>
+ <view class="people_box" wx:for="{{array}}" wx:key="{{item.id}}" wx:if="{{!box_null}}"> 
+    <navigator url="../list-detil/list-detil?id={{item.oldId}}" class="url"> 
+   <!-- 头像 -->
+    <view class='people_img' wx:if="{{item.sex==1}}"><image src="../../../../images/man.png"></image></view>
+ <view class='people_img' wx:if="{{item.sex==2}}"><image src="../../../../images/woman.png"></image></view>
+
+    <view class='people_file'>
+    <!-- 名字 -->
+       <text class='name_text'>{{item.oldName}}</text>
+    <!-- 性别 -->
+       <text class='sex_name' wx:if="{{item.sex==1}}">男 </text>
+        <text class='sex_name' wx:if="{{item.sex==2}}">女 </text>
+    <!-- 介护等级   -->
+       <text class='file_text'>介护I级</text>
+    </view>
+    <!-- 楼层 -->
+    <view class='people_place_a'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+ </navigator>
+ </view>

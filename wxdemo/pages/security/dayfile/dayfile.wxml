@@ -1,0 +1,46 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+
+
+		<view class='i2'>
+			<input type="text" name="generalState" placeholder='一般情况' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="mindState" placeholder='神志情况' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="skinState" placeholder='皮肤' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="pipeState" placeholder='管道' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="dietState" placeholder='饮食' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="sleepState" placeholder='睡眠' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="moodState" placeholder='心情' />
+		</view>
+
+		<view class='i2'>
+			<input type="text" name="excreteState" placeholder='大小便' />
+		</view>
+
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+	<view>
+
+
+	</view>
+</view>

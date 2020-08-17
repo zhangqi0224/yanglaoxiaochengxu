@@ -1,0 +1,65 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+		<view class='i2'>
+
+			<input type="text" name="name" placeholder='咨询人姓名' />
+
+		</view>
+
+		<view class='i2'>
+
+			<input type="text" name="phone" placeholder='咨询人联系方式' />
+
+		</view>
+
+
+		<picker bindchange="bindPickerChange" value="{{index}}" range="{{relationship}}" class='i4'>
+
+			<input value='{{relationship[index]}}' placeholder="与老人关系" disabled="true" name='relationship'></input>
+
+		</picker>
+
+		<view class='i2'>
+
+			<input type="txet" name="oldName" placeholder='老人姓名' />
+
+		</view>
+
+		<picker bindchange="bindPickerChangeoldsex" value="{{oldsexindex}}" range="{{oldsex}}" class='i4'>
+
+			<input value='{{oldsex[oldsexindex]}}' placeholder="老人性别" disabled="true" name='oldsex'></input>
+
+		</picker>
+
+		<view class='i2'>
+
+			<input type="txet" name="oldAge" placeholder='老人年龄' />
+
+		</view>
+
+		<view class='i2'>
+
+			<input type="txet" name="selfCare" placeholder='自理状态' />
+
+		</view>
+
+		<picker bindchange="bindPickerChangeintention" value="{{intentionindex}}" range="{{intention}}" class='i4'>
+
+			<input value='{{intention[intentionindex]}}' placeholder="是否有意向" disabled="true" name='intention'></input>
+
+		</picker>
+
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+
+
+</view>

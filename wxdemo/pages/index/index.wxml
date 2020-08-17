@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+
+  <ec-canvas id="mychart" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  <view class="two">
+  <ec-canvas id="mycharttwo" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas>
+  </view>
+</view>

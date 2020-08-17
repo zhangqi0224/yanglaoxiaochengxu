@@ -1,0 +1,46 @@
+<!--pages/service/basicfile/basicfile.wxml-->
+<import src="../../../wxSearch/wxSearch.wxml" />
+<view class="container">
+
+  <view class="card-container">
+  <!-- 搜索 -->
+    <view class="section">
+   
+      <input name="keyword"   placeholder="搜索姓名，身份证号" confirm-type="搜索" bindconfirm="search" bindblur="wxSearchBlur" bindinput="wxSearchInput" bindfocus="wxSerchFocus" value='{{search}}'/>
+        <view class="searchbutton" bindtap="searchbutton"><image src="../../../images/sou-suo.png"></image></view>
+    </view>
+    
+  </view>
+
+
+  <template is="wxSearch" data="{{wxSearchData}}"/>
+  <view class="clear"></view>
+
+
+
+<view class="people_box" wx:for="{{array}}" wx:key="">
+   <navigator url="list-detil/list-detil?id={{item.oldId}}" class="url"> 
+
+<!-- 头像 -->
+    <view class='people_img' wx:if="{{item.sex==1}}"><image src="../../../images/man.png"></image></view>
+ <view class='people_img' wx:if="{{item.sex==2}}"><image src="../../../images/woman.png"></image></view>
+
+    <view class='people_file'>
+    <!-- 名字 -->
+       <text class='name_text'>{{item.oldName}}</text>
+    <!-- 性别 -->
+       <text class='sex_name' wx:if="{{item.sex==1}}">男 </text>
+        <text class='sex_name' wx:if="{{item.sex==2}}">女 </text>
+    <!-- 介护等级   -->
+       <text class='file_text' wx:if="{{item.nursingLevel == null}}">暂无</text>
+       <text class='file_text' wx:if="{{item.nursingLevel != null}}">{{item.nursingLevel}}</text>
+    </view>
+    <!-- 楼层 -->
+    <view class='people_place_a'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view> 
+  </navigator>
+  </view>
+
+
+
+ 
+</view>

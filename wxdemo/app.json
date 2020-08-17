@@ -1,0 +1,103 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/service/booking/booking",
+    "pages/healthy/qrcode/qrcode",
+    "pages/visit/visit",
+    "pages/security/security",
+    "pages/out/out",
+    "pages/security/monitor/monitor",
+    "pages/security/diagnosis/diagnosis",
+    "pages/security/basicfile/basicfile",
+    "pages/security/basicfile/personal/personal",
+    "pages/security/dayfile/dayfile",
+    "pages/security/healthfile/healthfile",
+    "pages/security/enjoin/enjoin",
+    "pages/healthy/outbind/outbind",
+    "pages/realname/realname",
+    "pages/healthy/healthy",
+    "pages/healthy/bind/bind",
+    "pages/service/adminlist/adminlist",
+    "pages/service/service",
+    "pages/service/activity/activity",
+    "pages/service/activity/index-detail/index-detail",
+    "pages/service/consultation/consultation",
+    "pages/search/search",
+    "pages/service/vr/vr",
+    "pages/search/searchresult/searchresult",
+    "pages/login/login",
+    "pages/healthy/add/add",
+    "pages/healthy/add/addserch/addserch",
+    "pages/healthy/add/addserch/serchfile/serchfile",
+    "pages/addold/addold",
+    "pages/addold/addserch/addserch",
+    "pages/addold/addserch/serchfile/serchfile",
+    "pages/service/basicfile/basicfile",
+    "pages/service/basicfile/basicfilelist/basicfilelist",
+    "pages/service/life/life",
+    "pages/service/life/lifelist/lifelist",
+    "pages/service/diagnosisfile/diagnosisfile",
+    "pages/service/diagnosisfile/diagnosislist/diagnosislist",
+    "pages/service/basicfile/basicfileserch/basicfileserch",
+    "pages/service/dailymonitoring/dailymonitoring",
+    "pages/service/healthrecord/healthrecord",
+    "pages/service/temporaryorder/temporaryorder",
+    "pages/service/standingorder/standingorder",
+    "pages/service/servicemanagement/servicemanagement",
+    "pages/service/two-dimensionalcode/two-dimensionalcode",
+    "pages/home/home",
+    "pages/service/basicfile/list-detil/list-detil",
+    "pages/service/adminlist/visitmanagement/visitmanagement",
+    "pages/service/healthrecord/healthrecordlist/healthrecordlist",
+    "pages/service/servicemanagement/servicemanagementlist/servicemanagementlist",
+    "pages/service/dailymonitoring/dailymonitoringlist/dailymonitoringlist",
+    "pages/service/temporaryorder/temporaryorderlist/temporaryorderlist",
+    "pages/service/standingorder/standingorderlist/standingorderlist",
+    "pages/healthy/file/file",
+  
+    "pages/healthy/aboutus/aboutus",
+    "pages/healthy/assesment/assesment"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息用于获取打卡信息"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "智慧养老服务平台",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#40D3A4"
+  },
+  "tabBar": {
+    "color": "#BFBFBF",
+    "selectedColor": "#40D4A4",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "数据展示",
+        "iconPath": "images/shujuclose.png",
+        "selectedIconPath": "images/shuju.png"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "text": "服务",
+        "iconPath": "images/fileclose.png",
+        "selectedIconPath": "images/file.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "房态管理",
+        "iconPath": "images/fangtaiclose.png",
+        "selectedIconPath": "images/fangtai.png"
+      },
+      {
+        "pagePath": "pages/healthy/healthy",
+        "text": "个人中心",
+        "iconPath": "images/Healthy.png",
+        "selectedIconPath": "images/Healthyclose.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

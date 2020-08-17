@@ -1,0 +1,59 @@
+<!--pages/personal/user/user.wxml-->
+<view>
+
+
+	<form bindsubmit="tj">
+
+
+		<view class='i2'>
+			<input type="text" name="testRate" placeholder='测量频次' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="systolicPressure" placeholder='收缩压（mmHg）' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="diastolicPressure" placeholder='舒张压（mmHg）' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="heartRate" placeholder='心率（次/分）' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="breathing" placeholder='呼吸（次/分）' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="temperature" placeholder='体温（℃）' />
+		</view>
+		<view class='i2'>
+			<input type="text" name="bloodSugar" placeholder='餐前血糖（mmol/L）' />
+		</view>
+
+		<view class='i2'>
+			<input type="text" name="afterBloodSugar" placeholder='餐后血糖（mmol/L）' />
+		</view>
+
+		<picker bindchange="bindPickerStoolCondition" value="{StoolConditionIndex}}" range="{{StoolCondition}}" class='i4'>
+
+			<input value='{{StoolCondition[StoolConditionIndex]}}' placeholder="大便情况" disabled="true" name='stoolCondition'></input>
+
+		</picker>
+
+
+		<picker bindchange="bindPickerMedicationCompliance" value="{{MedicationComplianceindex}}" range="{{MedicationCompliance}}" class='i4'>
+
+			<input value='{{MedicationCompliance[MedicationComplianceindex]}}' placeholder="服药依从性" disabled="true" name='medicationCompliance'></input>
+
+		</picker>
+
+	<textarea name="remark" placeholder='备注' class='textdiv' maxlength='-1'></textarea>
+
+		<view>
+			<button type="primary" form-type="submit" class='button'>提交</button>
+		</view>
+
+
+	</form>
+	<view>
+
+
+	</view>
+</view>

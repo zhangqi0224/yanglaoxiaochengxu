@@ -1,0 +1,161 @@
+<!--pages/user/index.wxml-->
+<!-- 头部 -->
+<view class='header'>
+	<view class='user-card'>
+		<view class='user-center'>
+			<view class='user-img'>
+				<block wx:if="{{hasUserInfo}}">
+					<image bindtap="bindViewTap" class="userinfo-avatar" src="{{img}}" mode="cover"></image>
+				</block>
+			</view>
+			<block wx:if="{{dlbutton}}">
+				<button open-type="getUserInfo" bindgetuserinfo="dl" class='login'>授权登录</button>
+			</block>
+		</view>
+	</view>
+	<view class='header_bg'>
+
+		<view class='header_bg_left'>
+			<icon class="font_family icon-jifenshangcheng"></icon>
+
+			<block wx:if="{{nologin}}">
+				<view>账户信息：-</view>
+			</block>
+
+			<block wx:if="{{islogin}}">
+
+				<block wx:for="{{userdata}}" wx:key="{{item.ID}}">
+
+					<block wx:if="{{item.groupId == 0}}">
+						<view>账户信息：未认证</view>
+					</block>
+
+					<block wx:if="{{item.groupId == 1}}">
+						<view>账户信息：家属</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 2}}">
+						<view>账户信息：老人</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 3}}">
+						<view>账户信息：保安部</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 4}}">
+						<view>账户信息：护理员</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 5}}">
+						<view>账户信息：护士</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 6}}">
+						<view>账户信息：管家</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 7}}">
+						<view>账户信息：医生</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 8}}">
+						<view>账户信息：接待人员</view>
+					</block>
+
+					<block wx:if="{{item.groupId  == 9}}">
+						<view>账户信息：综合人员</view>
+					</block>
+
+
+				</block>
+			</block>
+		</view>
+
+		<view class='header_bg_left'>
+			<icon class="font_family icon-shujuziyuanguanli"></icon>
+			<block wx:if="{{nologin}}">
+				<view>关注长者：-</view>
+			</block>
+			<block wx:if="{{islogin}}">
+				<view>关注长者：{{Oldcount}}</view>
+			</block>
+		</view>
+
+
+
+	</view>
+</view>
+<view class='content'>
+	<block wx:if="{{islogin}}">
+		<view class='user-list'>
+
+			<block wx:if="{{bind}}">
+				<navigator url='bind/bind'>
+					<view class='user-list-card'>
+						<view class='user-list-left'>
+							<view class='font_family icon-aixin2 user-list-left-icon'></view>
+							<view class='user-list-left-text'>院内人员认证</view>
+						</view>
+						<view class='font_family icon-youhua user-list-right-icon'></view>
+					</view>
+				</navigator>
+				<navigator url='outbind/outbind'>
+					<view class='user-list-card'>
+						<view class='user-list-left'>
+							<view class='font_family icon-aixin2 user-list-left-icon'></view>
+							<view class='user-list-left-text'>家属信息认证</view>
+						</view>
+						<view class='font_family icon-youhua user-list-right-icon'></view>
+					</view>
+				</navigator>
+			</block>
+
+			<block wx:if="{{ischeck}}">
+				<navigator url='add/add'>
+					<view class='user-list-card'>
+						<view class='user-list-left'>
+							<view class='font_family icon-shoucang user-list-left-icon'></view>
+							<view class='user-list-left-text'>添加长者</view>
+						</view>
+						<view class='font_family icon-youhua user-list-right-icon'></view>
+					</view>
+				</navigator>
+			</block>
+		</view>
+	</block>
+
+
+	<view class='user-list'>
+		<block wx:if="{{islogin}}">
+			<navigator url='qrcode/qrcode'>
+				<view class='user-list-card'>
+					<view class='user-list-left'>
+						<view class='font_family icon-shoucang user-list-left-icon'></view>
+						<view class='user-list-left-text'>我的二维码</view>
+					</view>
+					<view class='font_family icon-youhua user-list-right-icon'></view>
+				</view>
+			</navigator>
+		</block>
+		<navigator url='aboutus/aboutus'>
+			<view class='user-list-card'>
+				<view class='user-list-left'>
+					<view class='font_family icon-guanyuxiaopai user-list-left-icon'></view>
+					<view class='user-list-left-text'>关于我们</view>
+				</view>
+				<view class='font_family icon-youhua user-list-right-icon'></view>
+			</view>
+		</navigator>
+	 
+	<navigator url='assesment/assesment?ID={{item.ID}}' wx:if="{{accessment==1}}" wx:for="{{userdata}}" >
+			<view class='user-list-card'>
+				<view class='user-list-left'>
+					<view class='font_family icon-pinggu user-list-left-icon'></view>
+					<view class='user-list-left-text'>评估信息</view>
+				</view>
+				<view class='font_family icon-youhua user-list-right-icon'></view>
+			</view>
+		</navigator>
+	 
+	</view>
+</view>

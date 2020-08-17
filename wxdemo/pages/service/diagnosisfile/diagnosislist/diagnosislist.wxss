@@ -1,0 +1,90 @@
+/* pages/service/healthrecord/healthrecordlist/healthrecordlist.wxss */
+/* pages/service/servicemanagement/servicemanagementlist/servicemanagementlist.wxss */
+.page_box{
+  width: 100%;
+}
+.page_header{
+  width: 100%;
+  height: 200rpx;
+  position: relative;
+}
+.header_img{
+position: absolute;
+width: 80rpx;
+height:80rpx;
+top: 60rpx;
+left:200rpx;
+
+}
+.header_img>image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.name_box{
+  font-family: "微软雅黑";
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.header_name_box{
+  position: absolute;
+  top: 65rpx;
+  left: 350rpx;
+  letter-spacing: 2px;
+}
+.common{
+  width:100%;
+   border-top: 1px solid #cccc;
+}
+/*总体*/
+.people_file_box{
+  width: 100%;
+  margin-top:20px;
+  border-top:1px solid #CCCC
+} 
+.file_list{
+  width: 100%;
+  height: 80rpx; 
+  line-height: 80rpx;
+  border-bottom:1px solid #CCCC;
+}
+.text_left{
+  float: left;
+  margin-left: 35rpx;
+  font-size: 14px;
+}
+.text_right{
+ float: right;
+ margin-right: 35rpx;
+ font-size: 14px;
+}
+.file_listcontnet{
+  width: 100%;
+  height: auto; 
+  line-height: 80rpx;
+  border-bottom:1px solid #CCCC;
+}
+.content_left{
+  margin-left: 35rpx;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: text-top;
+
+}
+.content_right{
+  margin-left: 55rpx;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: text-top;
+
+}
+ 
+ .recordcontent{
+   text-indent: 2rem;
+ }
+ .nothave{
+
+  width: 100%;
+  text-align: center;
+  margin-top: 20vh;
+
+}

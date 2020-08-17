@@ -1,0 +1,55 @@
+<view class="container">
+  <view class="tab">
+    <view class="tab-title">
+      <view class="{{selected1?'border-tottom':'default'}}" bindtap="selected1">房间预约</view>
+      <!-- <view class="{{selected2?'border-tottom':'default'}}" bindtap="selected2">房间试住</view> -->
+      <view class="{{selected3?'border-tottom':'default'}}" bindtap="selected3">房间入住</view>
+      <view class="{{selected4?'border-tottom':'default'}}" bindtap="selected4">预计退房</view>
+    </view>
+  </view>
+      <view class="tab-title tab_d">
+      <view class="CCCC">特殊房态</view>
+      <view class="{{special1?'border-tottom':'default'}}" bindtap="special1">一人包房</view>
+      <view class="{{special2?'border-tottom':'default'}}" bindtap="special2">夫妻同住</view>
+      <view class="{{special3?'border-tottom':'default'}}" bindtap="special3">与人合住</view>
+    </view>
+      <view class="tab-title tab_d">
+      <view class="CCCC">楼栋选择</view>
+      <view class="floor" style="width:200rpx;">
+      <picker bindchange="bindPickerStoried"  value="{{storiedindex}}" range="{{testname}}" class='i4'>
+      <input value='{{testname[storiedindex]}}' placeholder="楼栋选择" disabled="true" name='people'></input>
+      </picker>
+      </view>
+      <view class="default" style="visibility: hidden;" ></view>
+      <view class="default" style="visibility: hidden;" ></view>
+    </view>
+
+      <view class="tab-title tab_d">
+      <view class="CCCC">楼层选择</view>
+      <view class="floor" style="width:200rpx;">
+      <picker bindchange="bindPickerChange" value="{{floorindex}}" range="{{floorname}}" class='i4'>
+      <input value='{{floorname[floorindex]}}' placeholder="楼层选择" disabled="true" name=''></input>
+      </picker>
+      </view>
+
+      <view class="default" style="visibility: hidden;" ></view>
+      <view class="default" style="visibility: hidden;" ></view>
+    </view>
+
+      <view class="tab-title tab_d">
+      <view class="CCCC">房间选择</view>
+      <view class="floor" style="width:200rpx;">
+        <picker bindchange="bindPickerHome" value="{{homeindex}}" range="{{rooname}}" class='i4'>
+      <input value='{{rooname[homeindex]}}' placeholder="房间选择" disabled="true" name=''></input>
+      </picker>
+      </view>
+      <view class="default" style="visibility: hidden;" ></view>
+      <view class="default" style="visibility: hidden;" ></view>
+    </view>
+
+
+    <view class="button_box">
+    <button class="rest" bindtap="reset">重置</button>
+    <button class="serch_button" bindtap="serchall">搜索</button>
+    </view>
+</view>

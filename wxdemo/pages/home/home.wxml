@@ -1,0 +1,90 @@
+<view class="container"> 
+  <view class="card-container">
+    <view class="section">
+      <navigator url="../search/search">
+        <input name="keyword" placeholder="搜索预约的房间号" confirm-type="搜索" bindconfirm="search" bindblur="wxSearchBlur" bindinput="wxSearchInput" bindfocus="wxSerchFocus" disabled='disabled' />
+      </navigator>
+    </view>
+  </view>
+
+  <view class="tab">
+    <view class="tab-title">
+      <view class="{{selected1?'border-tottom':'default'}}" bindtap="selected1">房间预约</view>
+      <view class="{{selected3?'border-tottom':'default'}}" bindtap="selected3">房间入住</view>
+      <view class="{{selected4?'border-tottom':'default'}}" bindtap="selected4">预计退房</view>
+    </view>
+    <view class="clear"></view>
+
+
+    <view class="tab-content">
+    <!-- 房间预约 -->
+      <view class="{{selected1?'show':'hidden'}}" wx:for="{{array1}}" wx:key="">
+        <view class="home_box" >
+          <view class='home_place_a'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+          <view class='home_bed_a'>{{item.bedNo}}</view>
+          <view class='home_file'>
+            <view class="file_text">
+              <text class="text_style text_a">姓名：{{item.oldName}}</text>
+              <text class="text_style text_b">入住时间：{{item.checkInDate}}</text>
+            </view>
+            <view class="file_text">
+              <text class="text_style text_a">年龄：{{item.oldAge}}</text>
+              <text class="text_style text_b" wx:if="{{item.nursingLevel}}">护理等级:{{item.nursingLvl}}</text>
+               <text class="text_style text_b" wx:if="{{!item.nursingLevel}}">护理等级:暂无</text>
+            </view>
+          </view>
+        </view> 
+      </view>
+      <!-- 房间试住 -->
+      <view class="{{selected2?'show':'hidden'}}" wx:for="{{array2}}" wx:key="">
+        <view class="home_box">
+          <view class='home_place_c'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+          <view class='home_bed_c'>{{item.bedNo}}</view>
+          <view class='home_file'>
+            <view class="file_text">
+              <text class="text_style text_a">姓名：{{item.oldName}}</text>
+              <text class="text_style text_b">入住时间：{{item.checkInDate}}</text>
+            </view>
+            <view class="file_text">
+              <text class="text_style text_a">年龄：{{item.oldAge}}</text>
+              <text class="text_style text_b" wx:if="{{item.nursingLevel}}">护理等级:{{item.nursingLvl}}</text>
+               <text class="text_style text_b" wx:if="{{!item.nursingLevel}}">护理等级:暂无</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 房间入住 -->
+      <view class="{{selected3?'show':'hidden'}}" wx:for="{{array3}}" wx:key="">
+        <view class="home_box">
+          <view class='home_place_a'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+          <view class='home_bed_a'>{{item.bedNo}}</view>
+          <view class='home_file'>
+            <view class="file_text">
+              <text class="text_style text_a">姓名：{{item.oldName}}</text>
+              <text class="text_style text_b">入住时间：{{item.checkInDate}}</text>
+            </view>
+            <view class="file_text">
+              <text class="text_style text_a">年龄：{{item.oldAge}}</text>
+               <text class="text_style text_b" wx:if="{{item.nursingLevel}}">护理等级:{{item.nursingLvl}}</text>
+               <text class="text_style text_b" wx:if="{{!item.nursingLevel}}">护理等级:暂无</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 预计退房 -->
+    <view class="{{selected4?'show':'hidden'}}"  wx:for="{{array4}}" wx:key=""> 
+      <view class="home_box">
+        <view class='home_place_b'>{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+        <view class='home_bed_b'>{{item.bedNo}}</view>
+        <view class='home_delete'>
+          <image src="../../images/delete.png" class="delete_img"></image>
+          <view class="delete_text">已退房</view>
+        </view>
+      </view> 
+    </view>
+
+
+  </view>
+
+</view>

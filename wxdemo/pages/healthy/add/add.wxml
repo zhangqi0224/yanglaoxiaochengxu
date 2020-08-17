@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="login-container">
+		<text class="app-title">添加长者</text>
+        <form class="login-form" bindsubmit="serchPeople">
+            <view class="section">
+                <input name="name" type="number"  placeholder="老人姓名/身份证号" />
+            </view>
+        
+        <view class="section">
+            <button type="primary" form-type="submit">查找</button>
+        </view>
+        </form>
+    </view>
+</view>

@@ -1,0 +1,119 @@
+<!--pages/service/dailymonitoring/dailymonitoringlist/dailymonitoringlist.wxml-->
+  
+  <!-- 头像 名字 -->
+ <view class="page_header" wx:for="{{array}}" wx:key="{{item.id}}"  wx:if="{{index<1}}"> 
+<view class="header_img" wx:if="{{item.sex==1}}"><image src="../../../../images/man.png"></image></view>
+<view class="header_img" wx:if="{{item.sex==2}}"><image src="../../../../images/woman.png"></image></view> 
+<view class="header_name_box">
+  <view class="name_box">{{item.old_name}}</view>
+</view> 
+</view>
+
+
+
+
+
+<!-- 老人公共部分 -->
+<view class="common" wx:for="{{array}}" wx:key="{{item.id}}" wx:if="{{index<1}}">
+<view class="file_list">
+  <view class="text_left">老人编号</view>
+  <view class="text_right">{{item.oldCode}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">性别</view>
+  <view class="text_right" wx:if="{{item.sex==1}}">男</view>
+  <view class="text_right" wx:if="{{item.sex==2}}">女</view>
+</view>
+
+<view class="file_list">
+ <view class="text_left">年龄</view>
+ <view class="text_right">{{item.old_age}}</view>
+</view>
+
+ 
+<view class="file_list"> 
+  <view class="text_left">护理等级</view>
+   <view class="text_right" wx:if="{{item.nursingLvl}}">{{item.nursingLvl}}</view>
+  <view class="text_right" wx:if="{{!item.nursingLvl}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">测量频次</view>
+  <view class="text_right">-</view>
+</view>
+</view>
+
+
+
+
+<!-- 每次测量结果 -->
+<view class="people_file_box  list_a"  wx:for="{{array}}" wx:key="{{item.id}}">   
+  <view class="file_list">
+      <view class="text_left">日期</view>
+      <view class="text_right">{{item.CREATE_DATE}}</view>
+  </view> 
+
+<view class="file_list">
+  <view class="text_left">收缩压（mmHg）</view>
+  <view class="text_right">{{item.SYSTOLIC_PRESSURE}}</view>
+</view> 
+ 
+<view class="file_list">
+  <view class="text_left">舒张压（mmHg）</view>
+  <view class="text_right">{{item.DIASTOLIC_PRESSURE}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">心率（次/分）</view>
+  <view class="text_right">{{item.HEART_RATE}}</view>
+</view>
+ 
+ 
+<view class="file_list">
+  <view class="text_left">呼吸（次/分）</view>
+  <view class="text_right" wx:if="{{item.BREATHING}}">{{item.BREATHING}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">体温（℃）</view>
+  <view class="text_right" wx:if="{{item.TEMPERATURE}}">{{item.TEMPERATURE}}</view>
+  <view class="text_right" wx:if="{{!item.TEMPERATURE}}">-</view>
+</view> 
+
+<view class="file_list">
+    <view class="text_left">餐前血糖（mmol/L）</view>
+    <view class="text_right"  wx:if="{{item.BLOOD_SUGAR}}">{{item.BLOOD_SUGAR}}</view>
+    <view class="text_right"  wx:if="{{!item.BLOOD_SUGAR}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left" >餐后血糖（mmol/L）</view>
+  <view class="text_right"  wx:if="{{item.AFTER_BLOOD_SUGAR}}">{{item.AFTER_BLOOD_SUGAR}}</view>
+  <view class="text_right"  wx:if="{{!item.AFTER_BLOOD_SUGAR}}">-</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">大便情况</view>
+  <view class="text_right">{{item.STOOL_CONDITION}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">服药依从性</view>
+  <view class="text_right">{{item.MEDICATION_COMPLIANCE}}</view>
+</view>
+
+<view class="file_list">
+  <view class="text_left">备注</view>
+  <view class="text_right"  wx:if="{{item.REMARK}}">{{item.REMARK}}</view>
+  <view class="text_right"  wx:if="{{!item.REMARK}}">-</view>
+</view>
+
+</view>
+ 
+     <block wx:if="{{notHave}}">
+      <view class="nothave">
+      暂无数据
+      </view>
+      
+    </block>

@@ -1,0 +1,15 @@
+/* pages/healthy/qrcode/qrcode.wxss */
+page{
+
+  background: black;
+
+}
+.qrcode{
+  width: 80%;
+  height: 550rpx;
+  margin:20vh auto;
+}
+.qrcodeimg{
+  width: 100%;
+  height: 100%;
+}

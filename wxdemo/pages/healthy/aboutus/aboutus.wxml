@@ -1,0 +1,22 @@
+<!--pages/healthy/aboutus/aboutus.wxml-->
+ <view class="contant">
+ <view class="introduce">
+    金龄健康产业投资(山东)有限公司作为济南城市建设集团的全资子公司，主要负责集团健康养老板块的投资建设和运营管理工作，是济南市养老协会副会长级单位。按照集团健康及养老服务产业发展的整体规划，2014年由济南市民政局、济南城市建设集团共同投资建设的重点民生工程山东济南养老服务中心项目成立，金龄健康投入运营
+ </view>
+ <view class="phone">
+   <image src="../../../images/dianhua.png"></image>
+   <text>020-123456789</text>
+ </view>
+ <view class="email">
+  <image src="../../../images/youjian.png"></image>
+   <text>123456789@qq.com</text>
+ </view>
+ <view class="address">
+  <image src="../../../images/dingwei.png"></image>
+   <text>天津市河西区</text>
+ </view>
+ <view class="code">
+ <view  class="guanfang">官方微信</view>
+ <image src="../../../images/code.jpg"></image>
+ </view>
+ </view>

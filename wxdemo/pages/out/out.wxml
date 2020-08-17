@@ -1,0 +1,52 @@
+<view class="people_file_box"  wx:for="{{array}}" wx:key="{{item.id}}"> 
+<view class="file_list">
+<view class="text_left">老人姓名</view><view class="text_right">{{item.oldName}}</view>
+</view>
+
+<view class="file_list">
+<view class="text_left">性别</view>
+    <view class="text_right" wx:if="{{item.sex==1}}">男</view>
+    <view class="text_right" wx:if="{{item.sex==2}}">女</view>
+</view>
+
+<view class="file_list">
+<view class="text_left">年龄</view><view class="text_right">{{item.oldAge}}</view>
+</view>
+ 
+<view class="file_list">
+<view class="text_left">园区</view>
+   <view class="text_right">{{item.buildName}}-{{item.floor}}-{{item.roomNo}}</view>
+</view>
+
+<!-- 中间部分 -->
+
+<view> 
+<form bindsubmit='registerFormSubmit' report-submit='true'>
+
+        <block wx:for="{{array}}">
+   
+
+        <input type="text" value="{{item.oldName}}" name="oldName"  style="display:none"/>
+
+        <input type="text" value="{{item.id}}" name="id" style="display:none" />
+
+         <input type="text" value="{{item.OLD_STATUS}}" name="OLD_STATUS" style="display:none" />
+
+       </block>
+
+
+      <view class='buttons'>
+
+        <block wx:if="{{!status}}">
+        <button class='confirmbtn' form-type='submit'>老人入园</button>
+        </block>
+        <block wx:if="{{status}}">
+         <button class='confirmbtn' form-type='submit'>老人出园</button>
+        </block>
+      </view>
+
+    </form>
+
+
+</view>
+ </view>

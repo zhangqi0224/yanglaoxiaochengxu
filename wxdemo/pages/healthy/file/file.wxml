@@ -1,0 +1,34 @@
+<view class="page_box">
+<view class="page_header">
+<view class="header_img"><image src="../../../images/user.png"></image></view>
+<view class="header_name_box">
+  <view class="name_box">张三</view>
+</view>
+</view>
+</view>
+<view class="people_file_box">
+<view class="file_box">
+<view class="file_list list_a">
+<view class="text_left">身体状况</view><view class="text_right">良好</view>
+</view>
+<view class="file_list">
+<view class="text_left">近期饮食状况</view><view class="text_right">良好</view>
+</view>
+</view>
+<view class="file_box_b">
+<view class="file_list list_a">
+<view class="text_left">近期血压趋势图</view><view class="text_right">
+<button bindtap="init">查看</button>
+</view>
+</view>
+<view class="file_list">
+<view class="text_left">近期心率趋势图</view><view class="text_right">
+<button bindtap="demo">查看</button>
+</view>
+</view>
+</view>
+<view class="ec">
+ <ec-canvas wx:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+ <ec-canvas wx:if="{{!isDisposeds}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ econe }}"></ec-canvas>
+ </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="page">
+
+
+<view class="title">{{title}}</view>
+
+<view class="time">{{time}}</view>
+
+
+<view class="video_box">
+
+
+<video src="https://www.jinlingjiankang.com/nursingms/{{video}}" class="video_view" custom-cache="{{false}}"></video>
+
+</view>
+
+
+
+
+
+</view>

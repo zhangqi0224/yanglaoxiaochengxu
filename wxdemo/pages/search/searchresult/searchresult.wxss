@@ -1,0 +1,211 @@
+/* pages/department/department.wxss */
+page{
+  background: white;
+  overflow-x: hidden;
+}
+.container {
+  padding: 0;
+}
+
+.card-container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.card-container .section {
+  padding: 20rpx 28rpx;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.card-container .section input {
+  padding: 0 28rpx;
+  margin-right: 160rpx;
+  width: 100%;
+  height: 72rpx;
+  font-size: 30rpx;
+  line-height: 72rpx;
+  background: #f4f4f8;
+  border: 2rpx solid #f4f4f8;
+  border-radius: 12rpx;
+  box-sizing: border-box;
+}
+
+/*主体部分*/
+
+.clear {
+  width: 100%;
+  height: 20rpx;
+  background: rgb(238, 238, 238);
+}
+
+.home_box{
+  width: 100%;
+  height: 200rpx;
+  background: white;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0,0,0.2);
+  margin-bottom: 8px;
+}
+
+.home_place_a {
+  font-family: "微软雅黑";
+  padding: 2rpx 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 14px;
+  border-radius: 15rpx;
+  background: rgb(130, 221, 232);
+  color: white;
+  display:inline-block;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.home_place_b {
+  font-family: "微软雅黑";
+  padding: 2rpx 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 14px;
+  border-radius: 15rpx;
+  color: white;
+  display:inline-block;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background: rgb(150, 225, 105);
+}
+
+.home_place_c {
+  font-family: "微软雅黑";
+  padding: 2rpx 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 14px;
+  border-radius: 15rpx;
+  color: white;
+  display:inline-block;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  background: rgb(225, 160, 92);
+}
+
+.home_bed_a{
+  color: rgb(130, 221, 232);
+  font-size: 14px;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+}
+
+.home_bed_b{
+  color: rgb(150, 225, 105);
+  font-size: 14px;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+}
+.home_bed_c{
+  color: rgb(225, 160, 92);
+  font-size: 14px;
+  height: 50rpx;
+  line-height: 50rpx;
+  display: inline-block;
+}
+.home_file{
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+}
+.file_text{
+  margin-top: 5rpx;
+}
+.text_style{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  width: 300rpx;
+  overflow: hidden;
+}
+.text_a{
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+}
+.home_delete{
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 80rpx;
+  vertical-align: top;
+}
+.delete_text{
+  color: rgb(116, 116,116);
+  position: absolute;
+  left:350rpx;
+  bottom:22rpx;
+}
+.delete_img{
+  width: 80rpx;
+  height:80rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 250rpx;
+  
+}
+/*tab切换*/
+.tab{
+  width: 100%;
+}
+.tab-title{
+  width:100%;
+  height:80rpx;
+  line-height:80rpx;
+  display:flex;
+  flex-direction: row;
+  font-size: 14px;
+  color: rgb(192,192,192);
+  font-family: "微软雅黑";
+}
+.tab-title view{
+  width: 150rpx;
+  margin: 0 auto;
+  text-align:center;
+}
+.border-tottom{
+  border-bottom:2px solid rgb(64, 211,164);
+  color: rgb(64, 211,164);
+}
+.show{display:block;}
+.hidden{display:none;}
+@media screen and (max-width: 320px) {
+
+.home_box{
+  width: 100%;
+  height: 250rpx;
+}
+.home_bed_a{
+  left: 450rpx;
+}
+.home_file{
+  height: 175rpx;
+  bottom: -20rpx;
+}
+.text_style{
+  width: 350rpx;
+
+}
+.text_a {
+  margin-right: 0rpx;
+}
+
+
+
+
+
+}

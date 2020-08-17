@@ -1,0 +1,175 @@
+/* pages/user/index.wxss */
+
+page {
+  background: #f2f2f2;
+}
+
+.header_bg{
+   width: 85%;
+   height: 210rpx; 
+   background: #fff;
+   position: absolute;
+ 
+   bottom: -90rpx;
+   left: 50%;
+   margin-left: -42.5%;
+   z-index: 1;
+   border-radius: 10rpx;
+   display: flex;
+   justify-content: space-between;
+}
+
+.header_bg_left{
+    width: 45%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.header_bg_left icon{
+    font-size: 65rpx;
+    color: #22d9d9;
+}
+
+.header_bg_left view{
+  font-size: 26rpx;
+  color: #666;
+  line-height: 1.8;
+}
+
+.header {
+  height: 250rpx;
+  background:#40D3A4;
+  position: relative;
+}
+
+.user-card {
+  width: 50%;
+  padding: 20rpx;
+  height: 230rpx;
+  border-radius: 20rpx;
+  position: absolute;
+  left: 22%;
+  bottom: 10%;
+  display: flex;
+  justify-content: space-around;
+  z-index: 30;
+}
+
+.user-left, .user-right {
+  text-align: center;
+  padding: 20rpx;
+  margin-top: 60rpx;
+  font-size: 28rpx;
+}
+
+.user-left-icon {
+  font-size: 70rpx;
+  color:#40D3A4;
+}
+
+.user-img {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.userinfo-nickname {
+  font-size: 30rpx;
+  display: block;
+  color: #333;
+  margin-top:20rpx;
+}
+
+.user-center {
+  position: absolute;
+  top: 28%;
+  font-size: 32rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.content {
+  width: 95%;
+  margin: 20rpx auto;
+  margin-top: 110rpx;
+}
+
+.user-list-card {
+  height: 75rpx;
+  border-radius: 15rpx;
+  background: #fff;
+  padding: 5rpx 20rpx;
+  margin: 5rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-list-left, .user-list-right {
+  display: flex;
+}
+
+.user-list-left-icon {
+  font-size: 40rpx;
+  line-height: 1;
+  padding: 18rpx 20rpx 10rpx 10rpx;
+}
+
+.user-list-right-icon {
+  font-size: 30rpx;
+  padding: 10rpx;
+  font-weight: 600;
+  line-height: 2;
+  color: #999;
+}
+
+.user-list-left-text {
+  font-size: 30rpx;
+  line-height: 73rpx;
+}
+
+.user-list {
+  margin-top: 20rpx;
+}
+
+.phone-number {
+  font-size: 28rpx;
+  color: #999;
+  line-height: 2.5;
+}
+
+.logbtn {
+  background: #FFF;
+  border: none;
+  padding-left: 0;
+}
+
+.logbtn::after{
+  border: none;
+}
+
+.icon{
+  width: 40rpx;
+  height: 40rpx;  
+}
+.login {
+  position: absolute;
+  top:40rpx;
+  left: -30rpx;
+  width: 250rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20%;
+  font-size: 16px;
+  box-shadow: 1px 1px 1px #cccc;
+  letter-spacing: 2rpx;
+  font-family: "微软雅黑";
+  background-color: #40d3a4;
+  color: white;
+}
